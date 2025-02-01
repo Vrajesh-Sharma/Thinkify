@@ -7,15 +7,20 @@ export const navItems = [
       url: '/',
     },
     {
-      name: 'My ideas',
-      icon: '/assets/icons/documents.svg',
+      name: 'My Ideas',
+      icon: '/assets/icons/ideas.svg',
       url: '/my-ideas',
     },
     {
-      name: 'Shared ideas',
-      icon: '',
-      url: '/shared-ideas',
-    }
+      name: 'Trending Ideas',
+      icon: '/assets/icons/trending.svg',
+      url: '/trending',
+    },
+    {
+      name: 'Leaderboard',
+      icon: '/assets/icons/leaderboard.svg',
+      url: '/leaderboard',
+    },
     // {
     //   name: 'Images',
     //   icon: '/assets/icons/images.svg',
