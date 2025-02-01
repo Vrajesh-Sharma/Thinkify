@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState, useRef, useEffect } from 'react';
-import { Send, Bot, User, Loader2 } from 'lucide-react';
+import { Send, Bot, User, Loader2, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 import { Textarea } from '@/components/ui/textarea';
@@ -112,9 +112,19 @@ export function IdeaChat({ onComplete, onClose }: IdeaChatProps) {
     >
       <div className="bg-white rounded-xl w-full max-w-2xl h-[80vh] flex flex-col">
         {/* Header */}
-        <div className="p-4 border-b">
-          <h2 className="text-xl font-semibold">Share Your Idea</h2>
-          <p className="text-sm text-gray-500">Chat with AI to develop your idea</p>
+        <div className="p-4 border-b flex justify-between items-center">
+          <div>
+            <h2 className="text-xl font-semibold">Share Your Idea</h2>
+            <p className="text-sm text-gray-500">Chat with AI to develop your idea</p>
+          </div>
+          <Button
+            variant="ghost"
+            size="icon"
+            onClick={onClose}
+            className="rounded-full hover:bg-gray-100"
+          >
+            <X className="h-5 w-5 text-gray-500" />
+          </Button>
         </div>
 
         {/* Messages */}
