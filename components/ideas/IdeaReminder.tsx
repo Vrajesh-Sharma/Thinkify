@@ -21,7 +21,6 @@ export function IdeaReminder({ ideaId, ideaTitle }: { ideaId: string; ideaTitle:
   });
 
   const handleSaveReminder = () => {
-    // TODO: Implement reminder saving logic
     console.log('Saving reminder settings:', settings);
   };
 
