@@ -99,7 +99,7 @@ export function IdeaDashboard() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           {/* Category Chart */}
           <div className="bg-white rounded-xl shadow-sm">
-            <CategoryPieChart data={categoryData} />
+            <CategoryPieChart data={categoryData} /> 
           </div>
 
           {/* Badges Section */}
